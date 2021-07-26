@@ -21,4 +21,8 @@ resource "aws_instance" "ubuntu" {
   instance_type = "t2.macro"
   vpc_security_group_ids      = ["sg-01b2d192db100cf5e"]
   subnet_id                   = "subnet-2b62b941"
+  
+  tags = {
+  Name = "test"
+}
 }
