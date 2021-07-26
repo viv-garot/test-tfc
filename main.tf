@@ -19,4 +19,7 @@ output "caller_user" {
 resource "aws_instance" "ubuntu" {
   ami           = "ami-0baa12826217a765e"
   instance_type = "t2.macro"
+  vpc_id = "vpc-3302f159"
+  cidr_block = "172.31.0.0/16"
+  availability_zone = "eu-central-1"
 }
