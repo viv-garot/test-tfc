@@ -18,7 +18,7 @@ output "caller_user" {
 
 resource "aws_instance" "ubuntu" {
   ami           = "ami-0baa12826217a765e"
-  instance_type = "t2.macro"
+  instance_type = "t2.micro"
   vpc_security_group_ids      = ["sg-01b2d192db100cf5e"]
   subnet_id                   = "subnet-2b62b941"
   
